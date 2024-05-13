@@ -13,10 +13,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input[type="text"] {
     width: 100%;
+    max-width: calc(100% - 20px);
     padding: 10px;
     font-size: 1.5rem;
     text-align: right;
@@ -29,11 +33,12 @@ input[type="text"] {
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 30px;
 }
 
 button {
-    padding: 15px;
+    padding: 20px; /* Increased padding for larger buttons */
+    width: 125%; /* Ensures buttons take full width of their container */
     border: none;
     background-color: #4CAF50;
     color: #fff;
